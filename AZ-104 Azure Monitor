@@ -1,0 +1,28 @@
+Azure Monitor para o Exame AZ-104
+Este artigo é um guia focado no Azure Monitor, uma ferramenta essencial para monitoramento de recursos no Microsoft Azure, voltado para candidatos que estão se preparando para o exame AZ-104: Microsoft Azure Administrator. Ele cobre os conceitos principais, configurações práticas e dicas específicas para o exame, com ênfase nos tópicos mais cobrados.
+1. Introdução ao Azure Monitor
+O Azure Monitor é uma solução centralizada para coletar, analisar e agir com base em dados de telemetria de recursos no Azure e em ambientes híbridos. Ele ajuda os administradores a monitorar desempenho, identificar problemas e otimizar recursos.
+Componentes Principais
+⦁	Métricas: Dados numéricos que descrevem o desempenho de recursos (ex.: CPU, memória, uso de disco).
+⦁	Logs: Dados detalhados de eventos, úteis para diagnóstico e auditoria.
+⦁	Alertas: Notificações baseadas em condições predefinidas (ex.: CPU > 80%).
+⦁	Painéis: Visualizações personalizadas para acompanhar métricas e logs.
+⦁	Application Insights: Monitoramento de aplicativos, focado em desempenho e experiência do usuário.
+⦁	Log Analytics: Ferramenta para consultar e analisar logs usando a linguagem KQL (Kusto Query Language).
+Dica para o exame: Entenda a diferença entre métricas (dados em tempo real, armazenados por 93 dias) e logs (dados detalhados, armazenados por mais tempo, dependendo da configuração).
+2. Configurando o Azure Monitor
+Passos para Configurar
+1.	Habilitar o Azure Monitor:
+⦁	O Azure Monitor é ativado automaticamente para recursos do Azure, mas pode ser configurado manualmente para ambientes híbridos ou locais.
+⦁	Acesse o portal do Azure > "Monitor" para começar.
+2.	Coletar Dados:
+⦁	Métricas: Coletadas automaticamente para a maioria dos recursos (ex.: VMs, contas de armazenamento).
+⦁	Logs: Configure um espaço de trabalho do Log Analytics para armazenar logs.
+⦁	No portal, vá para "Log Analytics Workspaces" > Criar > Escolha assinatura, grupo de recursos e região.
+3.	Fontes de Dados:
+⦁	Habilite o agente do Azure Monitor (Azure Monitor Agent) para VMs ou servidores locais.
+⦁	Configure Data Collection Rules (DCR) para definir quais dados coletar (ex.: eventos de sistema, contadores de desempenho).
+4.	Visualização:
+⦁	Crie painéis personalizados no Azure Monitor para visualizar métricas e logs.
+⦁	Use o Azure Workbooks para relatórios interativos.
+Dica para o exame: Saiba como criar um espaço de trabalho do Log Analytics e associá-lo a recursos como
